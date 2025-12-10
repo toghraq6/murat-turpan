@@ -11,3 +11,11 @@ body {
   font-family: "Lato", sans-serif;
   border: 2px solid red;
 }
+header {
+  height: 70px;
+  border: 2px solid blue;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
