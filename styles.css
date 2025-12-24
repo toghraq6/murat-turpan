@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+:root {
+  --primary: #0a2a43;
+  --secondary: #1f6feb;
+  --tertiary: #17a398;
+  --quaternary: #222222;
+  --quinary: #f3f4f6;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,10 +20,47 @@ body {
   border: 2px solid red;
 }
 header {
-  height: 70px;
-  border: 2px solid blue;
+  height: 8rem;
+  border: 2px solid green;
+}
+header * {
+  /* border: 3px solid hotpink; */
+  text-align: center;
+}
+
+header img {
+  height: 70%;
+  border-radius: 50px;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.container {
+  height: 100%;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: space-evenly;
+  background-color: #1f6feb;
+  color: #f3f4f6;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 2.7rem;
+  padding: 10px 10px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px var(--primary);
+}
+
+.container li {
+  list-style-type: none;
+}
+.container ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container li a {
+  padding: 0 7px;
+  text-decoration: none;
+  color: var(--quinary);
 }
